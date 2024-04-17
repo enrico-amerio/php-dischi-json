@@ -4,8 +4,13 @@ createApp({
   data(){
     return{
       discs:[],
-      iframeSrc: 'https://open.spotify.com/embed/album/5jaBd7t5jtPsn8Dwj1HF1q?utm_source=generator',
-      apiUrl:'php/server.php'
+      discOnFocus:null,
+      spotifySrc: '',
+      ytSrc:'',
+      apiUrl:'php/server.php',
+      isFocus: false,
+      isSpotifyActive: false,
+      isYoutubeActive: false
     }
   },
   methods:{
@@ -14,10 +19,29 @@ createApp({
       .then(result =>{
         this.discs = result.data
       })
-
     },
-    changePlayerSrc(spotifySrc){
-      this.iframeSrc = spotifySrc;
+    changeSpotifySrc(newSrc){
+      this.isYoutubeActive = false;
+      this.isSpotifyActive= true;
+      this.spotifySrc = newSrc;
+    },
+    changeYoutubeSrc(newSrc){
+      this.isYoutubeActive = true;
+      this.isSpotifyActive= false;
+      this.ytSrc = newSrc;
+    },
+    closePlayer(){
+      this.isYoutubeActive = false;
+      this.isSpotifyActive= false;
+    },
+    focusAlbum(album){
+      this.isFocus = true,
+      this.discOnFocus = album;
+    },
+    closePopup(){
+      this.isFocus = false,
+      this.discOnFocus = null
+
     }
   },
   mounted(){

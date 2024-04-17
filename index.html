@@ -30,24 +30,40 @@
 
 </head>
 <body>
+  <img src="https://scontent.fmxp6-1.fna.fbcdn.net/v/t31.18172-8/14615814_10154754034164749_128837257556971155_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ZEVx9tGeWPAAb6VS5RM&_nc_ht=scontent.fmxp6-1.fna&oh=00_AfDAnw-g9gmJILr-SED4DJ0mIdcVBCdsT64VPGFnJLuUnA&oe=66476C6C" alt="" width="100%">
   <div class="container" id="app">
+    <h1 class="text-center title mt-3 ">Discografia</h1>
     <div class="wrapper d-flex flex-wrap text-center align-items-center justify-content-center">
-      <div class="card m-5" style="width: 18rem;" v-for="(disc, index) in discs" :key="disc.index">
+      <div class="card m-5" style="width: 16rem;" v-for="(disc, index) in discs" :key="disc.index" @click="focusAlbum(disc)">
         <img :src=" disc.poster " class="card-img-top" alt="poster">
         <div class="card-body">
           <h5 class="card-title">{{ disc.title }}</h5>
           <p class="card-text">{{ disc.author }}</p>
           <h6 class="card-text">{{ disc.year }}</h6>
-          <a v-if="disc.spotify" class="btn btn-success me-3" @click="changePlayerSrc(disc.spotify)">Spotify</a>
-          <a v-if="disc.youtube" :href="disc.youtube" class="btn btn-danger">Youtube</a>
+          <a v-if="disc.spotify" class="btn btn-success me-3" @click.stop="changeSpotifySrc(disc.spotify)">Spotify</a>
+          <a v-if="disc.youtube" class="btn btn-danger"@click.stop="changeYoutubeSrc(disc.youtube)">Youtube</a>
         </div>
       </div>
     </div>
-    <div class="player">
-      <iframe style="border-radius:12px" :src="iframeSrc" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="player text-end ">
+      <a v-if="isSpotifyActive || isYoutubeActive" class="btn btn-outline-danger"@click="closePlayer()">X</a>
+      <iframe v-if="isSpotifyActive" style="border-radius:12px" :src="spotifySrc" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe v-if="isYoutubeActive" style="border-radius:12px" width="100%" height="315" :src="ytSrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="popup-wrapper" v-if="isFocus">
+      <div class="popup text-center ">
+        <a  class="btn btn-outline-danger close-popup"@click="closePopup()">X</a>
+        <img :src="discOnFocus.poster" alt="poster" width="200px">
+        <h5 class="card-title">{{ discOnFocus.title }}</h5>
+        <p class="card-text">{{ discOnFocus.author }}</p>
+        <p class="card-text">{{ discOnFocus.EP }}</p>
+        <p class="card-text">{{ discOnFocus.genre }}</p>
+        <h6 class="card-text">{{ discOnFocus.year }}</h6>
+        </div>
+      </div>
     </div>
   </div>
-
+  
   <script src="js/script.js"></script>
 </body>
 </html>
