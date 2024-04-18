@@ -8,7 +8,7 @@ z-index: 99;
 body{
   background-color: #222831;
 }
-.title{
+.title, label{
   color: rgba(255, 255, 255, 0.7);
 }
 .popup-wrapper {
@@ -45,4 +45,7 @@ body{
 .card img{
   cursor: pointer;
   
+}
+.nickname{
+  font-size: 0.8rem;
 }

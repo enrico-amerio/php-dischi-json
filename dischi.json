@@ -1,53 +1,86 @@
-[
-    {
-        "title": "Xenomorphosis",
-        "author": "Corroosion",
-        "year": 2016,
-        "poster": "https://scontent.fmxp6-1.fna.fbcdn.net/v/t39.30808-6/355147631_828629455493267_4467907372050280405_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=wjRFZVa_TmQAb4YkSFm&_nc_ht=scontent.fmxp6-1.fna&oh=00_AfBlQm8XTMWcdLGR0n7UhyygzT9e9G7YWCf23f9r_qJ7AQ&oe=6625A4A2",
-        "genre": "Deathcore",
-        "type": "EP",
-        "spotify":"https://open.spotify.com/embed/album/5jaBd7t5jtPsn8Dwj1HF1q?utm_source=generator",
-        "youtube":"https://www.youtube.com/embed/2TMa7n5-960?si=iJM5zB8Xx2un0BSs"
-    },
-    {
-        "title": "Dirt Awareness",
-        "author": "Corroosion",
-        "year": 2012,
-        "poster": "https://www.metal-archives.com/images/3/2/8/4/328428.jpg?0544",
-        "genre": "Deathcore",
-        "type": "Full-length",
-        "spotify":"https://open.spotify.com/embed/album/5npa3GDJ4No1PIwOzORiqR?utm_source=generator",
-        "youtube":"https://www.youtube.com/embed/ilrgJPoSURU?si=IBxzdSvSQoJT8lNG"
-        
-        
-    },
-    {
-        "title": "Punish the Mind",
-        "author": "Corroosion",
-        "year": 2009,
-        "poster": "https://www.metal-archives.com/images/2/4/7/4/247449.jpg",
-        "genre": "Deathcore",
-        "type": "Full-length",
-        "spotify":"https://open.spotify.com/embed/album/75CpDts1FBO0MoA4OC4lus?utm_source=generator",
-        "youtube":"https://www.youtube.com/embed/pFrJBKazmuc?si=wxndkPj-FLeS1MwO"
-        
-    },
-    {
-        "title": "Two Steps Before the Vein",
-        "author": "Corroosion",
-        "year": 2008,
-        "poster": "https://www.metal-archives.com/images/1/9/4/4/194479.jpg",
-        "genre": "Deathcore",
-        "type": "EP",
-        "youtube":"https://www.youtube.com/embed/kS2-Dl72pdE?si=00gS-Nxx53uU3K5h"
-    },
-    {
-        "title": "Maze of Human Deprivation",
-        "author": "Corroosion",
-        "year": 2007,
-        "poster": "https://www.metal-archives.com/images/1/6/2/7/162725.jpg",
-        "genre": "Deathcore",
-        "type": "EP",
-        "youtube":"https://www.youtube.com/embed/0--eFf39Qeg?si=PdY_kSUF3P9jTvwG"
-    }
-]
+{
+    "discography": [
+        {
+            "title": "Xenomorphosis",
+            "author": "Corroosion",
+            "year": 2016,
+            "poster": "https:\/\/scontent.fmxp6-1.fna.fbcdn.net\/v\/t39.30808-6\/355147631_828629455493267_4467907372050280405_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=wjRFZVa_TmQAb4YkSFm&_nc_ht=scontent.fmxp6-1.fna&oh=00_AfBlQm8XTMWcdLGR0n7UhyygzT9e9G7YWCf23f9r_qJ7AQ&oe=6625A4A2",
+            "genre": "Deathcore",
+            "type": "EP",
+            "spotify": "https:\/\/open.spotify.com\/embed\/album\/5jaBd7t5jtPsn8Dwj1HF1q?utm_source=generator",
+            "youtube": "https:\/\/www.youtube.com\/embed\/2TMa7n5-960?si=iJM5zB8Xx2un0BSs"
+        },
+        {
+            "title": "Dirt Awareness",
+            "author": "Corroosion",
+            "year": 2012,
+            "poster": "https:\/\/www.metal-archives.com\/images\/3\/2\/8\/4\/328428.jpg?0544",
+            "genre": "Deathcore",
+            "type": "Full-length",
+            "spotify": "https:\/\/open.spotify.com\/embed\/album\/5npa3GDJ4No1PIwOzORiqR?utm_source=generator",
+            "youtube": "https:\/\/www.youtube.com\/embed\/ilrgJPoSURU?si=IBxzdSvSQoJT8lNG"
+        },
+        {
+            "title": "Punish the Mind",
+            "author": "Corroosion",
+            "year": 2009,
+            "poster": "https:\/\/www.metal-archives.com\/images\/2\/4\/7\/4\/247449.jpg",
+            "genre": "Deathcore",
+            "type": "Full-length",
+            "spotify": "https:\/\/open.spotify.com\/embed\/album\/75CpDts1FBO0MoA4OC4lus?utm_source=generator",
+            "youtube": "https:\/\/www.youtube.com\/embed\/pFrJBKazmuc?si=wxndkPj-FLeS1MwO"
+        },
+        {
+            "title": "Two Steps Before the Vein",
+            "author": "Corroosion",
+            "year": 2008,
+            "poster": "https:\/\/www.metal-archives.com\/images\/1\/9\/4\/4\/194479.jpg",
+            "genre": "Deathcore",
+            "type": "EP",
+            "youtube": "https:\/\/www.youtube.com\/embed\/kS2-Dl72pdE?si=00gS-Nxx53uU3K5h"
+        },
+        {
+            "title": "Maze of Human Deprivation",
+            "author": "Corroosion",
+            "year": 2007,
+            "poster": "https:\/\/www.metal-archives.com\/images\/1\/6\/2\/7\/162725.jpg",
+            "genre": "Deathcore",
+            "type": "EP",
+            "youtube": "https:\/\/www.youtube.com\/embed\/0--eFf39Qeg?si=PdY_kSUF3P9jTvwG"
+        }
+    ],
+    "favourites": [
+        {
+            "title": "I Let It In and It Took Everything",
+            "author": "Loathe",
+            "year": 2020,
+            "poster": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/0\/08\/I_Let_It_in_and_It_Took_Everything.jpg",
+            "genre": "Post-metal",
+            "addedBy": "Enrico Amerio"
+        },
+        {
+            "title": "White Pony",
+            "author": "Deftones",
+            "year": 2000,
+            "poster": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/1\/16\/Deftones_-_White_Pony-greycoverart.jpg",
+            "genre": "Nu Metal",
+            "addedBy": "Enrico Amerio"
+        },
+        {
+            "title": "obZen",
+            "author": "Meshuggah",
+            "year": 2008,
+            "poster": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/0\/0b\/Meshuggah_-_obZen.jpg",
+            "genre": "Djent",
+            "addedBy": "Enrico Amerio"
+        },
+        {
+            "title": "Rage Against the Machine",
+            "author": "Rage Against the Machine",
+            "year": 1992,
+            "poster": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/1\/1a\/RageAgainsttheMachineRageAgainsttheMachine.jpg",
+            "genre": "Rap metal",
+            "addedBy": "Enrico Amerio"
+        }
+    ]
+}

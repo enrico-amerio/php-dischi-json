@@ -4,6 +4,14 @@ createApp({
   data(){
     return{
       discs:[],
+      newDisc:{
+        title:'',
+        author:'',
+        year:'',
+        poster:'',
+        genre:'',
+        addedBy:''
+      },
       discOnFocus:null,
       spotifySrc: '',
       ytSrc:'',
@@ -42,6 +50,21 @@ createApp({
       this.isFocus = false,
       this.discOnFocus = null
 
+    },
+    addnewDisc(){
+      console.log(this.newDisc);
+      const data = new FormData();
+      data.append('newDiscTitle', this.newDisc.title);
+      data.append('newDiscAuthor', this.newDisc.author);
+      data.append('newDiscYear', this.newDisc.year);
+      data.append('newDiscPoster', this.newDisc.poster);
+      data.append('newDiscGenre', this.newDisc.genre);
+      data.append('newDiscAddedBy', this.newDisc.addedBy);
+      axios.post(this.apiUrl, data)
+      .then(result =>{
+          console.log(result.data);
+
+        })
     }
   },
   mounted(){
