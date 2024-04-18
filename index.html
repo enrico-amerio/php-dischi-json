@@ -34,8 +34,8 @@
   <div class="container" id="app">
     <h1 class="text-center title mt-3 ">Discografia</h1>
     <div class="wrapper d-flex flex-wrap text-center align-items-center justify-content-center">
-      <div class="card m-5" style="width: 16rem;" v-for="(disc, index) in discs" :key="disc.index" @click="focusAlbum(disc)">
-        <img :src=" disc.poster " class="card-img-top" alt="poster">
+      <div class="card m-5" style="width: 16rem;" v-for="(disc, index) in discs" :key="disc.index" >
+        <img :src=" disc.poster " class="card-img-top" alt="poster" @click="focusAlbum(disc)">
         <div class="card-body">
           <h5 class="card-title">{{ disc.title }}</h5>
           <p class="card-text">{{ disc.author }}</p>
