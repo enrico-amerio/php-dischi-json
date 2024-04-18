@@ -52,7 +52,6 @@ createApp({
 
     },
     addnewDisc(){
-      console.log(this.newDisc);
       const data = new FormData();
       data.append('newDiscTitle', this.newDisc.title);
       data.append('newDiscAuthor', this.newDisc.author);
@@ -62,9 +61,22 @@ createApp({
       data.append('newDiscAddedBy', this.newDisc.addedBy);
       axios.post(this.apiUrl, data)
       .then(result =>{
-          console.log(result.data);
-
+        this.discs = result.data
+        
+      })
+    },
+    deleteDisc(index){
+      if(confirm('Sei sicuro di voler eliminare questo disco dai preferiti?')){
+        const data = new FormData();
+        data.append('discToDelete', index);
+        axios.post(this.apiUrl, data)
+        .then(result =>{
+          this.discs = result.data
+          
         })
+
+      }
+      
     }
   },
   mounted(){

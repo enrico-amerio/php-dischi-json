@@ -13,6 +13,12 @@ if(isset($_POST['newDiscTitle'])){
   ];
   $discs['favourites'][] = $new_fav;
   file_put_contents('../dischi.json', json_encode($discs, JSON_PRETTY_PRINT));
+
+}
+if(isset($_POST['discToDelete'])){
+  $discToDelete = $_POST['discToDelete'];
+  array_splice($discs['favourites'], $discToDelete,1);
+  file_put_contents('../dischi.json', json_encode($discs, JSON_PRETTY_PRINT));
 }
 
 header('Content-Type: application/json');

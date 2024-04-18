@@ -8,7 +8,7 @@ z-index: 99;
 body{
   background-color: #222831;
 }
-.title, label{
+.title,.subtitle, label{
   color: rgba(255, 255, 255, 0.7);
 }
 .popup-wrapper {
@@ -48,4 +48,15 @@ body{
 }
 .nickname{
   font-size: 0.8rem;
+}
+.favourite{
+  position: relative;
+}
+.delete{
+  position:absolute;
+  top: -10px;
+  right: -13px;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  padding: 4px 8px;
 }
